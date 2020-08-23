@@ -1,0 +1,10 @@
+.header-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  background-color: green;
+  color: white
+}
