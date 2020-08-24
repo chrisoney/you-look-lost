@@ -1,10 +1,65 @@
 .header-links {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-p {
-  background-color: green;
-  color: white
+.header-links {
+  color: #fff;
+  text-align: center;
+}
+.header-links > p:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffee00, 0 0 40px #ffee00, 0 0 50px #ffee00, 0 0 60px #ffee00, 0 0 70px #ffee00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #f4f748, 0 0 40px #f4f748, 0 0 50px #f4f748, 0 0 60px #f4f748, 0 0 70px #f4f748, 0 0 80px #f4f748;
+  }
+}
+
+body {
+  background: url('./images/dark-forest.jpg') center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  resize: both;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.apology-section {
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 10px;
+}
+
+.apology-title {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  /* -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black; */
+}
+
+.apology-body {
+  font-size: 20px;
+  text-align: center;
+  /* background: black; */
+  border-radius: 15px;
+  padding: 15px;
 }
